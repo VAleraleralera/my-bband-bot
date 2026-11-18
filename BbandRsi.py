@@ -1,18 +1,10 @@
-# --- Не удаляйте эти библиотеки ---
 from freqtrade.strategy import IStrategy
 from pandas import DataFrame
 import talib.abstract as ta
 import freqtrade.vendor.qtpylib.indicators as qtpylib
-from datetime import datetime
-
-# --------------------------------
 
 
 class BbandRsi(IStrategy):
-    """
-    автор: Герт Вольгемут
-    """
-
     INTERFACE_VERSION: int = 3
 
     minimal_roi = {
